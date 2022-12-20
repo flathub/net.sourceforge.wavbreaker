@@ -28,8 +28,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/thp/wavbreaker/archive/refs/tags/0.15.tar.gz",
-                    "sha256": "dac911a309ba65d5fae880b42c683868ab9fa275a4dc308e4b7cefb4dbcab3c9"
+                    "url": "https://github.com/thp/wavbreaker/archive/refs/tags/0.16.tar.gz",
+                    "sha256": "5595291fba10e15f7c9ae24787732353d3c11bc3b2174e83631a6304a397490d"
                 }
             ]
         }
