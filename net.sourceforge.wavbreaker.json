@@ -1,10 +1,11 @@
 {
     "app-id": "net.sourceforge.wavbreaker",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "wavbreaker",
     "finish-args": [
+       "--share=ipc",
        "--socket=wayland",
        "--socket=fallback-x11",
        "--socket=pulseaudio",
@@ -14,6 +15,9 @@
         {
             "name": "libao",
             "buildsystem": "autotools",
+            "build-options":{
+                "cflags": "-Wno-implicit-function-declaration"
+            },
             "sources": [
                 {
                     "type": "git",
@@ -30,6 +34,10 @@
                     "type": "archive",
                     "url": "https://github.com/thp/wavbreaker/archive/refs/tags/0.16.tar.gz",
                     "sha256": "5595291fba10e15f7c9ae24787732353d3c11bc3b2174e83631a6304a397490d"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
             ]
         }
