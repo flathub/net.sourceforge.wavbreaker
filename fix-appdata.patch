@@ -1,0 +1,43 @@
+From adb9124c7e67ce4e80864931757ade002856dca1 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 3 Jan 2026 21:01:00 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/net.sourceforge.wavbreaker.appdata.xml | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/data/net.sourceforge.wavbreaker.appdata.xml b/data/net.sourceforge.wavbreaker.appdata.xml
+index 13cabd7..88a724a 100644
+--- a/data/net.sourceforge.wavbreaker.appdata.xml
++++ b/data/net.sourceforge.wavbreaker.appdata.xml
+@@ -3,7 +3,6 @@
+ <component type="desktop-application">
+   <id>net.sourceforge.wavbreaker</id>
+   <metadata_license>FSFAP</metadata_license>
+-  <content_rating>none</content_rating>
+   <project_license>GPL-2.0+</project_license>
+   <name>wavbreaker</name>
+   <summary>GUI tool to split WAV, MP2 and MP3 files</summary>
+@@ -37,14 +36,18 @@
+     </p>
+   </description>
+   <launchable type="desktop-id">net.sourceforge.wavbreaker.desktop</launchable>
++  <content_rating type="oars-1.1" />
+   <screenshots>
+     <screenshot type="default">
+       <caption>Splitting an audio file into multiple parts</caption>
+       <image>https://github.com/thp/wavbreaker/raw/master/data/screenshot.png</image>
+     </screenshot>
+   </screenshots>
+ 
+   <url type="homepage">https://wavbreaker.sourceforge.io/</url>
++  <url type="bugtracker">https://github.com/thp/wavbreaker/issues</url>
++  <url type="vcs-browser">https://github.com/thp/wavbreaker</url>
++  <developer_name>Thomas Perl</developer_name>
+ 
+   <provides>
+     <binary>wavbreaker</binary>
+--
+libgit2 1.7.2
+
